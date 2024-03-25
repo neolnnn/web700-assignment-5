@@ -1,0 +1,96 @@
+<div class="row">
+    <main class="col-md-12">
+        <br>
+        <h2>{{student.firstName}} {{student.lastName}} - Student: {{student.studentNum}}</h2>
+        <hr />
+
+        <form method="post" action="/student/update">
+        <input type="hidden" name="studentNum" value="{{student.studentNum}}" />
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>First Name:</label>
+                        <input class="form-control" name="firstName" type="text" value="{{student.firstName}}" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Last Name:</label>
+                        <input class="form-control" name="lastName" type="text" value="{{student.lastName}}" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input class="form-control" name="email" type="email" value="{{student.email}}" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Address (Street):</label>
+                        <input class="form-control" name="addressStreet" type="text" value="{{student.addressStreet}}" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Address (City):</label>
+                        <input class="form-control" name="addressCity" type="text" value="{{student.addressCity}}" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Address (Province):</label>
+                        <input class="form-control" name="addressProvince" type="text" value="{{student.addressProvince}}" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>TA:</label>
+                        <input name="TA" type="checkbox" value="{{student.TA}}" {{#if student.TA}}checked{{/if}} />
+                    </div>
+                    <div class="form-group">
+                        <label>Status:</label>
+                        <input name="status" type="radio" value="Full Time" {{#equal student.status "Full Time"}}checked{{/equal}}/> Full Time
+                        <input name="status" type="radio" value="Part Time" {{#equal student.status "Part Time"}}checked{{/equal}}/> Part Time
+                    </div>
+                    <div class="form-group">
+                        <label>Course:</label>
+                        <select class="form-control" name="course">
+                            <option value="1" {{#equal student.course "1"}}selected{{/equal}}>DES720</option>
+                            <option value="2" {{#equal student.course "2"}}selected{{/equal}}>JAV745</option>
+                            <option value="3" {{#equal student.course "3"}}selected{{/equal}}>OPS705</option>
+                            <option value="4" {{#equal student.course "4"}}selected{{/equal}}>SQL710</option>
+                            <option value="5" {{#equal student.course "5"}}selected{{/equal}}>WEB700</option>
+                            <option value="6" {{#equal student.course "6"}}selected{{/equal}}>CAP805</option>
+                            <option value="7" {{#equal student.course "7"}}selected{{/equal}}>CJV805</option>
+                            <option value="8" {{#equal student.course "8"}}selected{{/equal}}>DBD800</option>
+                            <option value="9" {{#equal student.course "9"}}selected{{/equal}}>DBW825</option>
+                            <option value="10" {{#equal student.course "10"}}selected{{/equal}}>SEC835</option>
+                            <option value="11" {{#equal student.course "11"}}selected{{/equal}}>WTP100</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <hr />
+
+        <input type="submit" class="btn btn-primary float-right" value="Update Student" /><br /><br /><br />
+        </form>
+    </main>
+</div>
