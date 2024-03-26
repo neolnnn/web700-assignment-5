@@ -3,15 +3,15 @@
 
 /* NavBar */
 .bg-light {
-    background-color: #3E58DD !important;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
+    background-color: #5215EA !important;
+    -webkit-box-shadow: 0px 10px 20px 0px #9975F3;
+    -moz-box-shadow: 0px 10px 20px 0px #9975F3;
+    box-shadow: 0px 10px 20px 0px #9975F3;
 }
 
 /* NavBar Branding */
 .bg-light .navbar-brand {
-    color: snow !important;
+    color: white !important;
     font-family: "Protest Strike";
     font-weight: bold;
     text-shadow: 2px 2px black;
@@ -19,17 +19,17 @@
 
 /* NavBar link buttons */
 .nav-item .nav-link {
-    color: snow !important;
+    color: white !important;
     font-family: "Protest Strike";
 }
 
 .nav-item .nav-link:hover {
-    color: #697DE4 !important;
+    color: #7444EE !important;
 }
 
 /* Body Text */
 h1, h2, h3, h4, h5, h6 {
-    color: snow;
+    color: white;
     font-family: "Protest Strike";
     text-shadow: 2px 2px black;
     padding-top: 8px;
@@ -38,14 +38,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Paragraph */
 p {
-    color: snow;
+    color: white;
     font-family: "Open Sans";
 }
 
 /* Page body color */
 body, html {
-    background: #697DE4;
-    background: linear-gradient( to bottom, #697DE4, #A5B1EF);
+    background: #7444EE;
+    background: linear-gradient( to bottom, #7444EE, #BBA4F7);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -53,30 +53,30 @@ body, html {
 
 /* Anchor */
 a {
-    color: #223DDD;
+    color: #E5CA4D;
 }
 
 a:hover {
-    color: snow
+    color: white
 }
 
 /* Buttons */
 .btn-primary {
-    background-color: #3E58DD;
-    color: snow;
+    background-color: #5215EA;
+    color: white;
     font-family: "Open Sans";
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
+    -webkit-box-shadow: 0px 10px 20px 0px #9975F3;
+    -moz-box-shadow: 0px 10px 20px 0px #9975F3;
+    box-shadow: 0px 10px 20px 0px #9975F3;
 }
 
 .btn-primary:hover {
-    background-color: #697DE4;
+    background-color: #7444EE;
 }
 
 /* Legend */
 legend {
-    color: snow;
+    color: white;
     font-family: "Protest Strike";
     text-shadow: 2px 2px black;
     padding-top: 8px;
@@ -85,43 +85,52 @@ legend {
 
 /* Labels */
 label {
-    color: snow;
+    color: white;
     font-family: "Open Sans";
 }
 
 /* Image shadows */
 img {
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
+    -webkit-box-shadow: 0px 10px 20px 0px #9975F3;
+    -moz-box-shadow: 0px 10px 20px 0px #9975F3;
+    box-shadow: 0px 10px 20px 0px #9975F3;
 }
 
 /* List objects */
 li {
-    color: snow;
+    color: white;
     font-family: "Open Sans";
 }
 
 /* Table */
 table {
     border-collapse: collapse;
-    background-color: #CDE8B7;
+    background-color: #9EE5D2;
     font-family: "Open Sans";
     width: 100%;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
-    box-shadow: 0px 10px 20px 0px rgba(62,88,221,0.5);
+    -webkit-box-shadow: 0px 10px 20px 0px #9975F3;
+    -moz-box-shadow: 0px 10px 20px 0px #9975F3;
+    box-shadow: 0px 10px 20px 0px #9975F3;
 }
 
 /* Table Rows */
 table tr:nth-child(odd) td {
-    background-image: linear-gradient( to bottom, #9BD16F, #B6DE95);
+    background-image: linear-gradient( to bottom, #40CCA7, #68D7BA);
+}
+
+td {
+    color: white;
+    padding: 8px;
+}
+
+td a {
+    color: white;
 }
 
 /* Table Header */
 th {    
-    background-color: #3E58DD;
-    color: snow;
+    background-color: #5215EA;
+    color: white;
     text-align: left;
     padding: 8px;
 }

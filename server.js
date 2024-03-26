@@ -6,7 +6,7 @@
 *
 *  Name: Nate Joshua Student ID: njoshua2 Date: 3/24/2024
 *
-*  Online (Cyclic) Link: https://raspberry-python-tam.cyclic.app/
+*  Online (Cyclic) Link: https://raspberry-python-tam.cyclic.app/ (Cyclic did not allow me to deploy)
 *
 ********************************************************************************/
 
